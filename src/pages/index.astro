@@ -1,0 +1,18 @@
+---
+import Base from "../components/Base.svelte";
+import Menu from "../components/Menu.svelte";
+import Footer from "../components/Footer.svelte";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Awesome Landing Page</title>
+  </head>
+  <body class="bg-gray-950 text-white min-h-screen font-sans">
+    <Menu client:load />
+    <Base client:load />
+    <Footer client:load />
+  </body>
+</html>
